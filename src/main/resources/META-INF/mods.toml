@@ -1,0 +1,10 @@
+modLoader="javafml"
+loaderVersion="43.4.6"
+license="MIT"
+[[mods]]
+modId="falseion_pantheon"
+version="0.1.0"
+displayName="FALSEION PANTHEON"
+authors="Iron Within, Falcion"
+description="..."
+mixins = "falseion_pantheon.mixins.json"

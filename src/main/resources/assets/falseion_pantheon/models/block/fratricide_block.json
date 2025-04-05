@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "falseion_pantheon:block/fratricide_block"
+  }
+}

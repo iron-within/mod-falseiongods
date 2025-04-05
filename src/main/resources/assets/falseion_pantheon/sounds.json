@@ -1,0 +1,26 @@
+{
+  "heartbeat1": {
+    "category": "ambient",
+    "sounds": [
+      { "name": "falseion_pantheon:heartbeat1", "stream": false }
+    ]
+  },
+  "heartbeat2": {
+    "category": "ambient",
+    "sounds": [
+      { "name": "falseion_pantheon:heartbeat2", "stream": false }
+    ]
+  },
+  "heartbeat3": {
+    "category": "ambient",
+    "sounds": [
+      { "name": "falseion_pantheon:heartbeat3", "stream": false }
+    ]
+  },
+  "heartbeat4": {
+    "category": "ambient",
+    "sounds": [
+      { "name": "falseion_pantheon:heartbeat4", "stream": false }
+    ]
+  }
+}

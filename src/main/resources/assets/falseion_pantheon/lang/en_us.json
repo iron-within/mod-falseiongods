@@ -1,0 +1,7 @@
+{
+  "item.falseion_pantheon.fratricide.name": "§4§lFRATRICIDE - MESSAGE FROM KHORNE",
+  "item.falseion_pantheon.fratricide.tooltip": "§5Artefact represents the original sin in the form of the first fratricide.\n\n§5Dedicated to FALSEION, whose blood spilled the seas, and whose hatred gave birth to KHORNE.\n\n§5Blesses the bearer with an unquenchable thirst for killing, giving rise to ULTRAVIOLENCE and ULTRAKILL.\n\n§5Bound to the first killer - failure to kill within the thirst curses you with the KHORNE's berserk rage.",
+  "effect.falseion_pantheon.khorne_berserk_rage": "Bloodthirsty rage",
+  "item.falseion_pantheon.khorne_icon": "KHORNE'S SINGULARITY",
+  "itemGroup.falseion_pantheon": "§6§lFALSEION'S MYTHIC"
+}
