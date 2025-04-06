@@ -13,7 +13,7 @@ public class RedGlintRenderType extends RenderType {
 
     public static final RenderType RED_GLINT = create(
             "red_glint",
-            DefaultVertexFormat.POSITION_TEX,
+            DefaultVertexFormat.BLOCK,
             VertexFormat.Mode.QUADS,
             256,
             false,

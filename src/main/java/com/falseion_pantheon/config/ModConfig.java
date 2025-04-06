@@ -24,6 +24,9 @@ public class ModConfig {
         public final ForgeConfigSpec.IntValue fratricideKillInterval; // in seconds
         public final ForgeConfigSpec.ConfigValue<String> fratricideDesignatedBearer; // new config value
         public final ForgeConfigSpec.ConfigValue<Boolean> fratricideRageImmortal;
+        public final ForgeConfigSpec.ConfigValue<Boolean> fratricidePlayRageMusic;
+        public final ForgeConfigSpec.ConfigValue<Boolean> banFratricideItemMovement;
+        public final ForgeConfigSpec.DoubleValue musicFadeOutLength;
 
         public ConfigValues(ForgeConfigSpec.Builder builder) {
             builder.push("General Settings");
@@ -36,6 +39,15 @@ public class ModConfig {
             fratricideRageImmortal = builder
                     .comment("Designated bearer for FRATRICIDE item would be immortal under the Khorne's berserk rage:")
                     .define("fratricideRageImmortal", Boolean.TRUE);
+            fratricidePlayRageMusic = builder
+                    .comment("Play music when Khorne's berserk rage is ignited:")
+                    .define("fratricidePlayRageMusic", Boolean.TRUE);
+            banFratricideItemMovement = builder
+                    .comment("If true, prevent moving or dropping FRATRICIDE outside the player's inventory")
+                    .define("banFratricideItemMovement", Boolean.TRUE);
+            musicFadeOutLength = builder
+                    .comment("Fade out length for any music after using the gem's special ability.")
+                    .defineInRange("musicFadeOutLength", 2.5f, 0f, 3600f);
 
             builder.pop();
         }

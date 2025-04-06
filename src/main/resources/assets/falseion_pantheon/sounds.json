@@ -22,5 +22,14 @@
     "sounds": [
       { "name": "falseion_pantheon:heartbeat4", "stream": false }
     ]
+  },
+  "berserker_rage": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "falseion_pantheon:berserker_rage",
+        "stream": true
+      }
+    ]
   }
 }

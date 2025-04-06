@@ -4,7 +4,10 @@
   "package": "com.falseion_pantheon.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "ContainerClickMixin",
     "ItemRendererMixin",
+    "QuickMoveStackMixin",
+    "SlotMixin",
     "client.RenderBuffersMixin"
   ],
   "injectors": {

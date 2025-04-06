@@ -4,9 +4,17 @@ import com.falseion_pantheon.FalseionItems;
 import net.minecraft.world.item.ItemStack;
 
 public class CustomGlintModule {
-    public static final ThreadLocal<Boolean> shouldUseRedGlint = ThreadLocal.withInitial(() -> false);
+    private static final ThreadLocal<Boolean> useCustomGlint = ThreadLocal.withInitial(() -> false);
 
     public static void updateTargetColor(ItemStack stack) {
-        shouldUseRedGlint.set(stack.getItem() == FalseionItems.FRATRICIDE.get());
+        useCustomGlint.set(stack.getItem() == FalseionItems.FRATRICIDE.get());
+    }
+
+    public static boolean shouldUseCustomGlint() {
+        return useCustomGlint.get();
+    }
+
+    public static void reset() {
+        useCustomGlint.set(false);
     }
 }

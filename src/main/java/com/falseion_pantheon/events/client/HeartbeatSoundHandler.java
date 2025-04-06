@@ -18,6 +18,11 @@ public class HeartbeatSoundHandler {
     private static final int HEARTBEAT_INTERVAL = 40; // Adjust to taste.
     private static int tickCounter = 0;
     private static final Random RANDOM = new Random();
+    private static int musicTickCounter = 0;
+
+    private static boolean IS_PLAYED_MUSIC = false;
+
+    private static int MUSIC_LENGTH = 6120; // 153 seconds / 2min 33 sec
 
     @SubscribeEvent
     public static void onClientTick(TickEvent.ClientTickEvent event) {
@@ -29,6 +34,21 @@ public class HeartbeatSoundHandler {
 
         // Check if the player has Khorne's Berserk Rage effect.
         if (player.hasEffect(com.falseion_pantheon.registries.EffectsRegistry.KHORNE_BERSERK_RAGE.get())) {
+//            if(IS_PLAYED_MUSIC) {
+//                musicTickCounter++;
+//
+//                // if played all length of the audio
+//                if(MUSIC_LENGTH < musicTickCounter) {
+//                    IS_PLAYED_MUSIC = false;
+//                    musicTickCounter = 0;
+//                }
+//            }
+//            else {
+//                // sound; volume; pitch
+//                player.playSound(FalseionSounds.BERSERKER_RAGE.get(), 0.2F, 0.95F);
+//                IS_PLAYED_MUSIC = true;
+//            }
+
             tickCounter++;
             if (tickCounter >= HEARTBEAT_INTERVAL) {
                 tickCounter = 0;
