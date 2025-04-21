@@ -7,12 +7,14 @@ import com.falseion_pantheon.data.FalseionSavedData;
 import com.falseion_pantheon.registries.EffectsRegistry;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.entity.EntityEvent;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
+import net.minecraftforge.event.entity.living.LivingSpawnEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 
@@ -54,6 +56,11 @@ public class KillEventHandler {
                 }
             }
         }
+    }
+
+    @SubscribeEvent
+    public void onEntitySpawned(LivingSpawnEvent event) {
+//        if(event.getEntity().getName() == '');
     }
 
 // Check the timer and apply the debuff if no kill has been made in the interval.

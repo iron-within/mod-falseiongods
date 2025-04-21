@@ -5,6 +5,7 @@ import com.falseion_pantheon.events.InventoryListener;
 import com.falseion_pantheon.events.KillEventHandler;
 import com.falseion_pantheon.network.NetworkHandler;
 import com.falseion_pantheon.registries.EffectsRegistry;
+import net.minecraft.client.Minecraft;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
